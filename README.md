@@ -1,15 +1,15 @@
-# Tarjeta digital — Rosa Villafane Serna
+# Tarjeta digital — Rosa Villafane S.
 
-Página web de una sola pieza que presenta la tarjeta de Rosa Villafane Serna,
-Import Manager de **Peru Tractor**, con la tarjeta física renderizada en 3D.
+Página web de una sola pieza que presenta la tarjeta de Rosa Villafane S.,
+Import Manager de **Peru Tractor**, con la tarjeta física renderizada en 3D
+sobre los colores y el logotipo de la marca.
 
 ## Efectos
 
 - **Inclinación 3D** — la tarjeta sigue el cursor con perspectiva real y sombra que acompaña el movimiento.
 - **Brillo especular** — reflejo tipo barniz que se desplaza sobre el papel.
 - **Giro anverso/reverso** — clic, toque, tecla Enter o el botón "Girar tarjeta".
-- **Halo ambiental** — la luz del fondo sigue el cursor sobre una rejilla industrial.
-- **Aparición al hacer scroll** en el bloque de contacto.
+- **Fondo de marca** — carbón Peru Tractor con la cuña ámbar y las franjas de oruga del reverso de la tarjeta; la luz del fondo sigue el cursor.
 
 ## Compatibilidad
 
@@ -31,5 +31,7 @@ Queda en `https://shakdows.github.io/RosaVillafane/`.
 ## Archivos
 
 - `index.html` — la página completa (HTML, CSS y JS en un solo archivo).
-- `assets/tarjeta-frente.png` — anverso (datos de contacto y QR).
-- `assets/tarjeta-reverso.png` — reverso (logotipo Peru Tractor).
+- `assets/tarjeta-frente.png` — anverso (datos de contacto y QR), sin el marco blanco.
+- `assets/tarjeta-reverso.png` — reverso (logotipo Peru Tractor), sin el marco blanco.
+- `assets/logo-perutractor.png` — logotipo extraído del reverso, tinta oscura, fondo transparente.
+- `assets/logo-perutractor-claro.png` — el mismo logotipo en tinta clara, para fondo oscuro.
