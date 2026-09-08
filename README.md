@@ -18,8 +18,10 @@ var PERFIL = {
   cargo:  'Import Manager',
   empresa:'Peru Tractor',
   correo: 'importaciones@perutractor.com',
-  telefono:'(01) 434 1400',
+  telefono:'(01) 434 1400',       // fijo de oficina
   telefonoE164:'+5114341400',
+  movil:  '+51 998 288 993',      // celular: es el que marca "Llamar"
+  movilE164:'+51998288993',
   web:    'https://www.perutractor.com',
   direccion:'Av. Michael Faraday 475, Urb. Santa Rosa, Ate, Lima'
 }
@@ -48,7 +50,10 @@ las dos imágenes de la tarjeta.
   y al arrastrar el dedo en táctil, sombra proyectada y brillo especular. Es un
   `<button>`, así que funciona con teclado y lector de pantalla.
 - **Guardar contacto** — genera un vCard 3.0 (Blob, sin BOM) compatible con iPhone,
-  Android, Outlook y Google Contacts, con confirmación visual.
+  Android, Outlook y Google Contacts, con los dos números (`TEL;TYPE=WORK,VOICE`
+  para el fijo y `TEL;TYPE=CELL,VOICE` para el celular) y confirmación visual.
+- **Teléfonos** — la ficha muestra fijo y celular, cada uno marcable por separado.
+  Los botones "Llamar" (hero y barra móvil) marcan el **celular**.
 - **Barra inferior móvil** — Guardar · Correo · Llamar, con `backdrop-filter`,
   respeta el safe-area del iPhone y se retira al llegar al pie.
 - **Fondo** — CSS: degradado radial, rejilla técnica, rayado diagonal y glow ámbar;
@@ -68,6 +73,7 @@ objetivo táctil por debajo de 44 px.
   `https://rosavillafane.vercel.app/`. Si el dominio real es otro, hay que
   sustituirlo (son cuatro líneas en el `<head>`), o la previsualización de
   WhatsApp y LinkedIn no cargará la imagen.
-- **WhatsApp**: no se añadió porque el único número disponible es un fijo. Si existe
-  un móvil corporativo, se agrega como acción adicional.
+- **WhatsApp**: el celular +51 998 288 993 ya está en la página, pero no se añadió
+  botón de WhatsApp porque nadie ha confirmado que ese número lo tenga. Con una
+  confirmación se agrega como acción.
 - **Destino del QR** del anverso: conviene escanearlo y confirmar a dónde lleva.
