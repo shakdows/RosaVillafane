@@ -22,6 +22,7 @@ var PERFIL = {
   telefonoE164:'+5114341400',
   movil:  '+51 998 288 993',      // celular: es el que marca "Llamar"
   movilE164:'+51998288993',
+  whatsapp:'https://wa.me/51998288993',
   web:    'https://www.perutractor.com',
   direccion:'Av. Michael Faraday 475, Urb. Santa Rosa, Ate, Lima'
 }
@@ -54,6 +55,12 @@ las dos imágenes de la tarjeta.
   para el fijo y `TEL;TYPE=CELL,VOICE` para el celular) y confirmación visual.
 - **Teléfonos** — la ficha muestra fijo y celular, cada uno marcable por separado.
   Los botones "Llamar" (hero y barra móvil) marcan el **celular**.
+- **WhatsApp** — botón propio y entrada en la barra móvil, hacia
+  `https://wa.me/51998288993`.
+- **Código QR del anverso** — regenerado para abrir ese mismo WhatsApp.
+  Antes apuntaba a `https://perutractor.com/`. Se generó con corrección de
+  errores nivel H y se verificó decodificándolo sobre la tarjeta final a
+  1605 px, 660 px y 390 px de ancho.
 - **Barra inferior móvil** — Guardar · Correo · Llamar, con `backdrop-filter`,
   respeta el safe-area del iPhone y se retira al llegar al pie.
 - **Fondo** — CSS: degradado radial, rejilla técnica, rayado diagonal y glow ámbar;
@@ -73,7 +80,6 @@ objetivo táctil por debajo de 44 px.
   `https://rosavillafane.vercel.app/`. Si el dominio real es otro, hay que
   sustituirlo (son cuatro líneas en el `<head>`), o la previsualización de
   WhatsApp y LinkedIn no cargará la imagen.
-- **WhatsApp**: el celular +51 998 288 993 ya está en la página, pero no se añadió
-  botón de WhatsApp porque nadie ha confirmado que ese número lo tenga. Con una
-  confirmación se agrega como acción.
-- **Destino del QR** del anverso: conviene escanearlo y confirmar a dónde lleva.
+- **Tarjetas ya impresas**: las que estén impresas llevan el QR anterior, que
+  apunta a `perutractor.com`. El cambio afecta solo a la imagen digital; para
+  que el QR de WhatsApp llegue al papel hay que reimprimir.
