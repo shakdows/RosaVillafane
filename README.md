@@ -50,6 +50,14 @@ las dos imágenes de la tarjeta.
 - **Tarjeta 3D** — `preserve-3d`, giro de 620 ms, inclinación al cursor en escritorio
   y al arrastrar el dedo en táctil, sombra proyectada y brillo especular. Es un
   `<button>`, así que funciona con teclado y lector de pantalla.
+- **Orden de las caras** — abre mostrando la cara de **Peru Tractor** (logotipo,
+  excavadora y "30 años"), para que lo primero que se vea sea la empresa; al
+  girarla aparecen los datos de contacto y el QR de WhatsApp. En el marcado son
+  `.cara.inicial` y `.cara.girada`: para invertirlo basta con intercambiar las
+  dos imágenes.
+- **Panel del hero** — grafito, no ámbar: la cara inicial de la tarjeta es
+  amarilla y sobre un fondo amarillo se perdía. El ámbar queda en las franjas
+  de oruga, los acentos y el CTA.
 - **Guardar contacto** — genera un vCard 3.0 (Blob, sin BOM) compatible con iPhone,
   Android, Outlook y Google Contacts, con los dos números (`TEL;TYPE=WORK,VOICE`
   para el fijo y `TEL;TYPE=CELL,VOICE` para el celular) y confirmación visual.
